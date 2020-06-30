@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>websiteTest</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   RIGHT(  website__c , 3) &lt;&gt; &quot;.SN&quot;,
+   RIGHT( website__c , 3) &lt;&gt; &quot;.sn&quot;
+ )</errorConditionFormula>
+    <errorDisplayField>website__c</errorDisplayField>
+    <errorMessage>The website must have an extensin with .sn  or .SN</errorMessage>
+</ValidationRule>
